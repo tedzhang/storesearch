@@ -13,14 +13,14 @@
 		9FDC44AE18BDDE1000CE2D46 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9FDC44AC18BDDE1000CE2D46 /* InfoPlist.strings */; };
 		9FDC44B018BDDE1000CE2D46 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FDC44AF18BDDE1000CE2D46 /* main.m */; };
 		9FDC44B418BDDE1000CE2D46 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FDC44B318BDDE1000CE2D46 /* AppDelegate.m */; };
-		9FDC44B718BDDE1000CE2D46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FDC44B518BDDE1000CE2D46 /* Main.storyboard */; };
-		9FDC44BA18BDDE1000CE2D46 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FDC44B918BDDE1000CE2D46 /* ViewController.m */; };
 		9FDC44BC18BDDE1000CE2D46 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FDC44BB18BDDE1000CE2D46 /* Images.xcassets */; };
 		9FDC44C318BDDE1000CE2D46 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FDC44C218BDDE1000CE2D46 /* XCTest.framework */; };
 		9FDC44C418BDDE1000CE2D46 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FDC44A318BDDE1000CE2D46 /* Foundation.framework */; };
 		9FDC44C518BDDE1000CE2D46 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FDC44A718BDDE1000CE2D46 /* UIKit.framework */; };
 		9FDC44CD18BDDE1000CE2D46 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9FDC44CB18BDDE1000CE2D46 /* InfoPlist.strings */; };
 		9FDC44CF18BDDE1000CE2D46 /* StoreSearchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FDC44CE18BDDE1000CE2D46 /* StoreSearchTests.m */; };
+		9FDC44DB18BE1A9900CE2D46 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FDC44D918BE1A9900CE2D46 /* SearchViewController.m */; };
+		9FDC44DC18BE1A9900CE2D46 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FDC44DA18BE1A9900CE2D46 /* SearchViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,15 +44,15 @@
 		9FDC44B118BDDE1000CE2D46 /* StoreSearch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StoreSearch-Prefix.pch"; sourceTree = "<group>"; };
 		9FDC44B218BDDE1000CE2D46 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9FDC44B318BDDE1000CE2D46 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9FDC44B618BDDE1000CE2D46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9FDC44B818BDDE1000CE2D46 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9FDC44B918BDDE1000CE2D46 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9FDC44BB18BDDE1000CE2D46 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9FDC44C118BDDE1000CE2D46 /* StoreSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoreSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FDC44C218BDDE1000CE2D46 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		9FDC44CA18BDDE1000CE2D46 /* StoreSearchTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StoreSearchTests-Info.plist"; sourceTree = "<group>"; };
 		9FDC44CC18BDDE1000CE2D46 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9FDC44CE18BDDE1000CE2D46 /* StoreSearchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoreSearchTests.m; sourceTree = "<group>"; };
+		9FDC44D818BE1A9900CE2D46 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		9FDC44D918BE1A9900CE2D46 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		9FDC44DA18BE1A9900CE2D46 /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,11 +114,11 @@
 			children = (
 				9FDC44B218BDDE1000CE2D46 /* AppDelegate.h */,
 				9FDC44B318BDDE1000CE2D46 /* AppDelegate.m */,
-				9FDC44B518BDDE1000CE2D46 /* Main.storyboard */,
-				9FDC44B818BDDE1000CE2D46 /* ViewController.h */,
-				9FDC44B918BDDE1000CE2D46 /* ViewController.m */,
 				9FDC44BB18BDDE1000CE2D46 /* Images.xcassets */,
 				9FDC44AA18BDDE1000CE2D46 /* Supporting Files */,
+				9FDC44D818BE1A9900CE2D46 /* SearchViewController.h */,
+				9FDC44D918BE1A9900CE2D46 /* SearchViewController.m */,
+				9FDC44DA18BE1A9900CE2D46 /* SearchViewController.xib */,
 			);
 			path = StoreSearch;
 			sourceTree = "<group>";
@@ -230,7 +230,7 @@
 			files = (
 				9FDC44BC18BDDE1000CE2D46 /* Images.xcassets in Resources */,
 				9FDC44AE18BDDE1000CE2D46 /* InfoPlist.strings in Resources */,
-				9FDC44B718BDDE1000CE2D46 /* Main.storyboard in Resources */,
+				9FDC44DC18BE1A9900CE2D46 /* SearchViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,8 +249,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FDC44BA18BDDE1000CE2D46 /* ViewController.m in Sources */,
 				9FDC44B418BDDE1000CE2D46 /* AppDelegate.m in Sources */,
+				9FDC44DB18BE1A9900CE2D46 /* SearchViewController.m in Sources */,
 				9FDC44B018BDDE1000CE2D46 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,14 +280,6 @@
 				9FDC44AD18BDDE1000CE2D46 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		9FDC44B518BDDE1000CE2D46 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9FDC44B618BDDE1000CE2D46 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		9FDC44CB18BDDE1000CE2D46 /* InfoPlist.strings */ = {
