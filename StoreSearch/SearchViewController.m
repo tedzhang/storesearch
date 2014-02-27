@@ -7,6 +7,8 @@
 //
 
 #import "SearchViewController.h"
+#import "SearchResultCell.h"
+#import "SearchResult.h"
 
 @interface SearchViewController () <UITableViewDataSource,UITableViewDelegate,UISearchBarDelegate>
 
@@ -32,6 +34,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.tableView.contentInset = UIEdgeInsetsMake(64, 0, 0, 0);
+    
+    UINib *cellNib = [UINib nibWithNibName:@"SearchResultCell" bundle:nil];
+    [self.tableView registerNib:cellNib forCellReuseIdentifier:@"SearchResultCell"];
+    self.tableView.rowHeight = 80;
+    [self.searchBar becomeFirstResponder];
 }
 
 - (void)didReceiveMemoryWarning
@@ -52,19 +59,17 @@
 {
     static NSString *cellIdentifer = @"SearchResultCell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifer];
-    if (cell == nil)
-    {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifer];
-    }
+    SearchResultCell *cell = (SearchResultCell*)[tableView dequeueReusableCellWithIdentifier:cellIdentifer];
     if ([_searchResults count] == 0)
     {
-        cell.textLabel.text = @"Nothing found";
-        cell.detailTextLabel.text = @"";
+        cell.nameLabel.text = @"Nothing found";
+        cell.artistNameLabel.text = @"";
     }
     else
     {
-        cell.textLabel.text = _searchResults[indexPath.row];
+        SearchResult *searchResult = _searchResults[indexPath.row];
+        cell.nameLabel.text = searchResult.name;
+        cell.artistNameLabel.text = searchResult.artistName;
     }
     return cell;
 }
