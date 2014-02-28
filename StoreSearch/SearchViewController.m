@@ -52,7 +52,9 @@
 {
     if (_searchResults == nil)
         return 0;
-    return [_searchResults count];
+    if ([_searchResults count] == 1)
+        return 1;
+    return [_searchResults count] + 1;
 }
 
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -94,5 +96,9 @@
 {
     return UIBarPositionTop;
 }
+
+
+
+
 
 @end
