@@ -7,6 +7,7 @@
 //
 
 #import "SearchResultCell.h"
+#import <AFNetworking/UIImageView+AFNetworking.h>
 
 @implementation SearchResultCell
 
@@ -34,6 +35,15 @@
     selectedView.backgroundColor = [UIColor colorWithRed:20/255.0f green:160/255.0f blue:160/255.0f alpha:0.5f];
     
     self.selectedBackgroundView = selectedView;
+    
+}
+
+-(void)prepareForReuse
+{
+    [super prepareForReuse];
+    [self.imageView cancelImageRequestOperation];
+    self.nameLabel.text = nil;
+    self.artistNameLabel.text = nil;
     
 }
 
