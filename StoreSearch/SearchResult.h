@@ -12,5 +12,6 @@
 
 @property (nonatomic,copy) NSString *name;
 @property (nonatomic,copy) NSString *artistName;
+@property (nonatomic,copy) NSString *artworkUrl;
 
 @end
